@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Car info</title>
+</head>
+
+
+<style>
+
+    @import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@500;600;700&family=Raleway:wght@100&display=swap');
+
+
+    *{
+        margin: 0;
+    }
+    .header{
+        width: 100%;
+        height: 200px;
+        background-size: cover;
+        background-color: #0f2940;
+
+    }
+
+
+    .header .header_content{
+        width:1000px;
+        display: flex;
+        max-height: 60px;
+        margin: 0 auto;
+        justify-content: space-between;
+        align-items:center;
+    }
+
+    .header .header_content a{
+        text-decoration: none;
+        color: white;
+    }
+    .header .header_content .textblock{
+        display: block;
+        line-height:5px;
+    }
+    .header_content img{
+        margin-top: 65px;
+        width: inherit;
+        object-fit: cover;
+        max-height: 200px;
+        max-width: 200px;
+    }
+    .header_content button{
+        color: #ffffff;
+        font-size: 20px;
+
+
+        background-color: rgba(28,28,28,0);
+        border: 0;
+        margin-top: 10px;
+    }
+    .header .header_content .textblock h1{
+        font-size: 28px;
+        font-family: 'Playfair Display', serif;
+        color: #807e7e;
+    }
+    .header .header_content .textblock img{
+        width: 200px;
+    }
+
+
+
+
+
+
+
+
+
+    /* 	Product Name */
+    #container .product-details h1{
+        font-family: 'Old Standard TT', serif;
+        display: inline-block;
+        position: relative;
+        font-size: 34px;
+        color: #344055;
+        margin: 0;
+
+    }
+
+    #container .product-details h1:before{
+        position: absolute;
+        content: '';
+        right: 0%;
+        top: 0%;
+        transform: translate(25px, -15px);
+        font-family: 'Farsan', cursive;
+        display: inline-block;
+        background: #FFA69E;
+        border-radius: 5px;
+        font-size: 14px;
+        padding: 5px;
+        color: #FFF;
+        margin: 0;
+
+    }
+
+
+
+
+
+    /* The most important information about the product */
+    #container .product-details > p {
+        font-family: 'Farsan', cursive;
+        text-align: center;
+        font-size: 20px;
+        color: #7d7d7d;
+
+    }
+
+
+
+
+    .btn:hover{transform: translateY(-4px);}
+
+    .btn span {
+        font-family: 'Farsan', cursive;
+        transition: transform 0.3s;
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 1.2em;
+        margin:0;
+
+    }
+    /* shopping cart icon */
+    .btn .price, .shopping-cart{
+        background: #333;
+        border: 0;
+        margin: 0;
+    }
+
+    .btn .price {
+        transform: translateX(-10%); padding-right: 15px;
+    }
+
+    /* the Icon */
+    .btn .shopping-cart {
+        transform: translateX(-100%);
+        position: absolute;
+        background: #333;
+        z-index: 1;
+        left: 0;
+        top: 0;
+    }
+
+    /* buy */
+    .btn .buy {z-index: 3; font-weight: bolder;}
+
+    .btn:hover .price {transform: translateX(-110%);}
+
+    .btn:hover .shopping-cart {transform: translateX(0%);}
+
+
+
+
+    #container img {width: 100%;height: 100%;}
+
+
+
+    .info h2 {text-align: center}
+    .product-image:hover .info{transform: translateX(0);}
+
+    .info ul li{transition: 0.3s ease;}
+    .info ul li:hover{transform: translateX(50px) scale(1.3);}
+
+    .product-image:hover img {transition: all 0.3s ease-out;}
+    .product-image:hover img {transform: scale(1.2, 1.2);}
+
+    .bgHeader{
+        background-image: URL("https://i.ibb.co/Q9xPfFZ/756106251367023.jpg");
+        height: 1000px;
+        background-repeat: no-repeat;
+        background-size: 100% 1100px;
+    }
+    .imgheader {
+        padding-top: 70px;
+        padding-left: 70px;
+        width: 300px;
+        height: 100px;
+    }
+
+    .header{
+        width: 100%;
+        height: 200px;
+        background-size: cover;
+        background-color: #0f2940;
+
+    }
+    body {
+        background-color: #020118;
+    }
+
+    .containerCar{
+        border: 1px solid black;
+        border-radius: 1px;
+        margin-top: 60px;
+        padding-top: 40px;
+        margin-left: 25%;
+
+        border-radius: 30px 30px 30px 30px;
+        -moz-border-radius: 30px 30px 30px 30px;
+        -webkit-border-radius: 30px 30px 30px 30px;
+        border: 0px solid #000000;
+        background-color: #dfdee7;
+
+        height: 830px;
+        width: 927px;
+
+
+    }
+
+
+
+    .carContentHeader{
+     display: flex;
+     flex-direction: column;
+
+ }
+    .car_content_id {
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        width: 100vw;
+        max-width: 1150px;
+        margin: 0 auto;
+        grid-row-gap: 50px;
+        grid-column-gap: 50px;
+    }
+    .car_content_id img {
+        width: inherit;
+        object-fit: cover;
+        height: 313px;
+        width: 560px;
+        margin-top: 20px;
+        margin-right: 230px;
+        border-radius: 10px 10px 10px 10px;
+        -moz-border-radius: 10px 10px 10px 10px;
+        -webkit-border-radius: 10px 10px 10px 10px;
+        border: 0px solid #000000;
+    }
+
+
+    .car_content_id h2 {
+        font-family: 'Alkatra', cursive;
+        font-family: 'Raleway', sans-serif;
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+        font-size: 35px;
+        margin: 20px;
+
+    }
+
+    .car_content_id p {
+        font-family: 'Alkatra', cursive;
+        font-family: 'Raleway', sans-serif;
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+        font-size: 20px;
+        margin: 30px;
+    }
+
+
+
+    .maincontent, body {
+        background-color: #020118;
+    }
+
+    .descrip-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 100vw;
+        max-width: 300px;
+ /*       margin: 0 auto;*/
+        grid-row-gap: 50px;
+        grid-column-gap: 50px;
+
+
+    }
+
+    .descrip-content-container {
+       display: flex;
+        margin-top: 30px;
+       margin-left: 50px;
+
+    }
+
+.descrip-content-container img {
+    height: 90px;
+    width: 90px;
+}
+
+.descrip-content-container p {
+    margin-top: 25%;
+    font-family: 'Alkatra', cursive;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 20px;
+    font-size: 20px;
+}
+    .gradient-button {
+
+        text-decoration: none;
+        display: inline-block;
+        color: white;
+        padding: 20px 60px;
+        margin-left: 45%;
+        margin-top: 50px;
+        border-radius: 10px;
+        font-family: 'Montserrat', sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        background-image: linear-gradient(to right, #3c3a7e 0%, #201f44 51%, #09024d 100%);
+        background-size: 200% auto;
+        box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+        transition: .5s;
+    }
+    .gradient-button:hover {
+        background-position: right center;
+    }
+
+
+</style>
+
+<body>
+<div class="header">
+    <div class="header_content">
+        <a href="/cars"><img style="padding-top:70px " src="https://i.ibb.co/Dwp3KSS/carlogo.png"  alt="logo-Car4you" border="0"></a>
+
+
+        <form action="">
+            <a href="/signIn"><img class = "imgheader" src="https://i.ibb.co/Tg42jLc/1000997-removebg-preview.png" alt=""></a>
+            <a href="/addUser"><img class = "imgheader" src="https://i.ibb.co/7yh8J2f/111.png" alt=""></a>
+        </form>
+
+    </div>
+
+</div>
+
+</div>
+<hr color="black" size="10px">
+<div class="maincontent">
+<div class="containerCar">
+    <div class="carContentHeader">
+     <div class="car_content_id">
+             <div>
+                <h2>${cars.carBrand} ${cars.carModel}</h2>
+                <p>${cars.description}</p>
+             </div>
+             <img src="${cars.imgURL}" alt="car">
+     </div>
+    </div>
+
+
+
+
+
+
+    <div class="descrip-container">
+        <#--transmission-->
+        <div class="descrip-content-container">
+            <img src="https://i.ibb.co/2tLyXMH/6.png" alt="">
+            <p>${cars.transmission}</p>
+        </div>
+
+        <#--gasoline-->
+        <div class="descrip-content-container">
+            <img src="https://i.ibb.co/j8zWM3L/1.png" alt="">
+            <p>${cars.fuelBrand}</p>
+        </div>
+
+        <#--number-->
+        <div class="descrip-content-container">
+            <img src="https://i.ibb.co/jrsynSG/2.png" alt="">
+            <p>${cars.carNumber}</p>
+        </div>
+
+        <#--engyne type-->
+        <div class="descrip-content-container">
+            <img src="https://i.ibb.co/4MZstjN/3.png" alt="">
+            <p>${cars.engineType}</p>
+        </div>
+
+        <#--car type-->
+        <div class="descrip-content-container">
+            <img src="https://i.ibb.co/Qp3VMX1/4.png" alt="">
+            <p>${cars.carType}</p>
+        </div>
+
+
+        <#--mileage-->
+        <div class="descrip-content-container">
+            <img src="https://i.ibb.co/85PYssY/5.png" alt="">
+            <p>${cars.mileageCar}</p>
+        </div>
+    </div>
+
+ <div>
+     <a href="/carBuyInfo/${cars.id}" class="gradient-button">${cars.price} $</a>
+ </div>
+</div>
+<#--
+<div id="container">
+
+    <!-- Start	Product details &ndash;&gt;
+    <div class="product-details">
+
+        <!-- 	Product Name &ndash;&gt;
+        <h1>${cars.carBrand} ${cars.carModel}</h1>
+        <span class="hint-star star">
+		<i class="fa fa-star" aria-hidden="true"></i>
+		<i class="fa fa-star" aria-hidden="true"></i>
+		<i class="fa fa-star" aria-hidden="true"></i>
+		<i class="fa fa-star-half-o" aria-hidden="true"></i>
+		<i class="fa fa-star-o" aria-hidden="true"></i>
+    	</span>
+
+
+        <!-- The most important information about the product &ndash;&gt;
+        <p class="information">${cars.description}</p>
+
+
+
+        <!-- 		Control &ndash;&gt;
+        <div class="control">
+            <a href="/carBuyInfo/${cars.id}">
+            <!-- Start Button buying &ndash;&gt;
+            <button class="btn">
+                <!-- 		the Price &ndash;&gt;
+                <span class="price">${cars.price} $</span>
+                <!-- 		shopping cart icon&ndash;&gt;
+                <span class="shopping-cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
+                <!-- 		Buy Now / ADD to Cart&ndash;&gt;
+                <span class="buy">Buy Now</span>
+
+            </button>
+            </a>
+            <!-- End Button buying &ndash;&gt;
+
+        </div>
+
+    </div>
+
+    <!-- 	End	Product details   &ndash;&gt;
+
+
+
+    <!-- 	Start product image & Information &ndash;&gt;
+
+    <div class="product-image">
+
+        <img src="${cars.imgURL}" alt="car">
+
+        <!-- 	product Information&ndash;&gt;
+        <div class="info">
+            <h2>The Description</h2>
+            <ul>
+                <li><img style="width: 60px; height: 60px" src="https://i.ibb.co/YBYrdvn/image.png">    ${cars.transmission}</li>
+                <li><img style="width: 60px; height: 60px" src="https://i.ibb.co/3SGDW6c/image.png">    ${cars.fuelBrand}</li>
+                <li><img style="width: 60px; height: 60px" src="https://i.ibb.co/Jyr5nyJ/image.png">    ${cars.carNumber}</li>
+                <li><img style="width: 60px; height: 60px" src="https://i.ibb.co/pzVwS27/image.png">    ${cars.engineType}</li>
+                <li><img style="width: 60px; height: 60px" src="https://i.ibb.co/hXtFGTJ/image.png">    ${cars.carType}</li>
+                <li><img style="width: 60px; height: 60px" src="https://i.ibb.co/5Fdrzqv/image.png">    ${cars.mileageCar}</li>
+            </ul>
+        </div>
+    </div>
+    <!--  End product image  &ndash;&gt;
+
+-->
+
+</div>
+
+</div>
+</body>
+</html>
