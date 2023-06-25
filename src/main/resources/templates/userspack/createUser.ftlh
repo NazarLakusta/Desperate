@@ -243,7 +243,7 @@
 </div>-->
 <div class="header">
     <div class="header_content">
-        <a href="/cars"><img style="padding-top:70px " src="https://i.ibb.co/Dwp3KSS/carlogo.png"  alt="logo-Car4you" border="0"></a>
+        <a href="/cars"><img style="padding-top:70px " src="https://i.ibb.co/Dwp3KSS/carlogo.png"  alt="logo-Car4dream" border="0"></a>
 
 
         <form action="">
@@ -282,7 +282,7 @@
         </div>
         <div class="right">
             <div class="right-text">
-                <h2>CAR4YOU</h2>
+                <h2>CAR4DREAM</h2>
                 <h5>Car for your dream</h5>
             </div>
             <div class="right-inductor"><img src="https://lh3.googleusercontent.com/fife/ABSRlIoGiXn2r0SBm7bjFHea6iCUOyY0N2SrvhNUT-orJfyGNRSMO2vfqar3R----X1SNdkh--=w1920-h979-ft" alt=""></div>

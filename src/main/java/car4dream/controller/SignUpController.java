@@ -1,7 +1,7 @@
-package com.car4you.controller;
+package com.car4dream.controller;
 
-import com.car4you.model.UserEntity;
-import com.car4you.services.UserService;
+import com.car4dream.model.UserEntity;
+import com.car4dream.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
